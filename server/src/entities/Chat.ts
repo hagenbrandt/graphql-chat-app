@@ -1,13 +1,13 @@
-import { ObjectType, Field } from "type-graphql";
+import { ObjectType, Field } from 'type-graphql'
 
 @ObjectType()
 export class Chat {
-    @Field()
-    id: number;
+  @Field()
+  id: number
 
-    @Field()
-    message: string;
+  @Field()
+  message: string
 
-    @Field()
-    name: string
+  @Field()
+  name: string
 }
