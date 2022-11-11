@@ -21,14 +21,14 @@ export const start = async () => {
       validate: false,
     }),
     subscriptions: {
-        path: '/subscriptions',
-        onConnect: () => {
-            console.log('Client connected for subscriptions');
-        },
-        onDisconnect: () => {
-            console.log('Client disconnected from subscriptions');
-        }
-    }
+      path: '/subscriptions',
+      onConnect: () => {
+        console.log('Client connected for subscriptions')
+      },
+      onDisconnect: () => {
+        console.log('Client disconnected from subscriptions')
+      },
+    },
   })
 
   apolloServer.applyMiddleware({
@@ -41,6 +41,8 @@ export const start = async () => {
     console.log(
       `Server listen on port http://localhost:${process.env.PORT}${apolloServer.graphqlPath}`
     )
-    console.log(`Subscriptions ready at ws://localhost:${process.env.PORT}${apolloServer.subscriptionsPath}`);
+    console.log(
+      `Subscriptions ready at ws://localhost:${process.env.PORT}${apolloServer.subscriptionsPath}`
+    )
   })
 }
