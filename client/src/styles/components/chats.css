@@ -1,15 +1,15 @@
 .chat-area {
-    display: flex;
-    flex-direction: column;
-    height: var(--view-height-40);
-    width: 100%;
-    overflow: scroll;
-    background: var(--clover-dark);
-    padding: var(--space-12);
-    margin: var(--space-20) 0;
-  }
-  
-  .user-message {
-    align-self: flex-end;
-    text-align: right;
-  }
+  display: flex;
+  flex-direction: column;
+  height: var(--view-height-40);
+  width: 100%;
+  overflow: scroll;
+  background: var(--clover-dark);
+  padding: var(--space-12);
+  margin: var(--space-20) 0;
+}
+
+.user-message {
+  align-self: flex-end;
+  text-align: right;
+}

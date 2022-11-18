@@ -42,6 +42,8 @@
     ]
   },
   "react-dotenv": {
-    "whitelist": ["API_PORT"]
+    "whitelist": [
+      "API_PORT"
+    ]
   }
 }

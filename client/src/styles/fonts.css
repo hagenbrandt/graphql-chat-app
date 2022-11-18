@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Retro Computer';
-    src: local('Retro Computer'),
-      url('../fonts/retro_computer.woff2') format('woff2');
-  }
+  font-family: 'Retro Computer';
+  src: local('Retro Computer'),
+    url('../fonts/retro_computer.woff2') format('woff2');
+}
 
 :root {
-    --default-font-family: 'Retro Computer';
+  --default-font-family: 'Retro Computer';
 }
