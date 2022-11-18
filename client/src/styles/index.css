@@ -1,0 +1,76 @@
+@import './spaces.css';
+
+:root {
+  --clover: #455117;
+  --feijoa: #8bdc82;
+  --clover-dark: #2a310d;
+}
+
+@font-face {
+  font-family: 'Retro Computer';
+  src: local('Retro Computer'),
+    url('../fonts/retro_computer.woff2') format('woff2');
+}
+
+body {
+  background: var(--clover);
+  color: var(--feijoa);
+  margin: 0;
+  font-family: 'Retro Computer';
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-20) 20vw;
+}
+
+button {
+  outline: none;
+  background: inherit;
+  border: 1px solid var(--feijoa);
+  font-family: inherit;
+  padding: var(--space-4) var(--space-12);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+input,
+textarea,
+#message {
+  background: inherit;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid var(--feijoa);
+  border: none;
+  outline: none;
+  box-shadow: inset 0 0 var(--space-12) var(--clover-dark);
+  width: 100% !important;
+  padding: var(--space-12);
+  margin: var(--space-12) 0;
+}
+
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 100%;
+  overflow: scroll;
+  background: var(--clover-dark);
+  padding: var(--space-12);
+  margin: var(--space-20) 0;
+}
+
+.user-message {
+  align-self: flex-end;
+  text-align: right;
+}
