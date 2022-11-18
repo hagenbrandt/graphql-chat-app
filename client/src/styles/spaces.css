@@ -3,4 +3,11 @@
   --space-8: 8px;
   --space-12: 12px;
   --space-20: 20px;
+  --space-280: 280px;
+  --space-600: 600px;
+
+  --view-width-20: 20vw;
+  --view-width-60: 60vw;
+
+  --view-height-40: 40vh;
 }

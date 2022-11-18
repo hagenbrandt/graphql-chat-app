@@ -46,8 +46,8 @@ function App() {
   
   return (
     <ApolloProvider client={client}>
-      <main className="app">
         {!entered && (
+          <section>
           <form>
             <input
               type="text"
@@ -57,16 +57,16 @@ function App() {
             ></input>
             <button onClick={() => setEntered(true)}>Enter chat</button>
           </form>
+          </section>
         )}
 
         {name !== '' && entered && (
-          <>
+          <section>
             <h1>Default Chat Room</h1>
             <Chats user={name} />
             <SendMessage name={name} />
-          </>
+          </section>
         )}
-      </main>
     </ApolloProvider>
   )
 }

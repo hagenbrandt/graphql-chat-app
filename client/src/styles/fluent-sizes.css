@@ -1,0 +1,3 @@
+:root {
+    --fluent-default-section: clamp(var(--space-280), var(--view-width-60), var(--space-600));
+}
