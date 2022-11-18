@@ -12,7 +12,7 @@ dotenv.config()
 const app = express()
 const httpServer = http.createServer(app)
 
-app.use(cors({ origin: `http://localhost:8080`, credentials: true }))
+app.use(cors({ origin: `http://localhost:3000`, credentials: true }))
 
 export const start = async () => {
   const apolloServer = new ApolloServer({
