@@ -1,0 +1,12 @@
+FROM node:12
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm i
+RUN npm build
+
+EXPOSE 9000
+
+CMD ["npm", "start"]
