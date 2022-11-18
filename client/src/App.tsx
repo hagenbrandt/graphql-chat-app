@@ -8,16 +8,17 @@ import { useState } from 'react'
 import './App.css'
 import Chats from './components/Chats'
 import { SendMessage } from './components/SendMessage'
+import env from "react-dotenv";
 
 const wsLink = new WebSocketLink({
-  uri: `ws://localhost:9000/subscriptions`,
+  uri: `ws://localhost:${env.API_PORT}/subscriptions`,
   options: {
     reconnect: true,
   },
 })
 
 const httpLink = new HttpLink({
-  uri: `http://localhost:9000/graphql`,
+  uri: `http://localhost:${env.API_PORT}/graphql`,
   credentials: 'include',
 })
 
@@ -42,7 +43,7 @@ const client = new ApolloClient({
 function App() {
   const [name, setName] = useState<string>('')
   const [entered, setEntered] = useState<boolean>(false)
-
+  
   return (
     <ApolloProvider client={client}>
       <main className="app">

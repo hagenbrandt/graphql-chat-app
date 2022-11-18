@@ -37,12 +37,12 @@ export const start = async () => {
   })
   apolloServer.installSubscriptionHandlers(httpServer)
 
-  httpServer.listen(process.env.PORT, () => {
+  httpServer.listen(process.env.API_PORT, () => {
     console.log(
-      `Server listen on port http://localhost:${process.env.PORT}${apolloServer.graphqlPath}`
+      `Server listen on port http://localhost:${process.env.API_PORT}${apolloServer.graphqlPath}`
     )
     console.log(
-      `Subscriptions ready at ws://localhost:${process.env.PORT}${apolloServer.subscriptionsPath}`
+      `Subscriptions ready at ws://localhost:${process.env.API_PORT}${apolloServer.subscriptionsPath}`
     )
   })
 }
