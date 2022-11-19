@@ -1,0 +1,12 @@
+{
+    "always-semicolon": true,
+    "block-indent": "",
+    "eof-newline": true,
+    "remove-empty-rulesets": true,
+    "space-after-colon": " ",
+    "space-after-opening-brace": "\n",
+    "space-before-closing-brace": "\n",
+    "space-before-colon": "",
+    "space-before-opening-brace": " ",
+    "strip-spaces": true
+}

@@ -1,12 +1,16 @@
-button {
-  color: inherit;
-  outline: none;
-  background: inherit;
-  border: var(--default-border);
-  font-family: inherit;
-  padding: var(--space-4) var(--space-12);
+button
+{
+    font-family: inherit;
+
+    padding: var(--space-4) var(--space-12);
+
+    color: inherit;
+    border: var(--default-border);
+    outline: none;
+    background: inherit;
 }
 
-button:hover {
-  cursor: pointer;
+button:hover
+{
+    cursor: pointer;
 }
